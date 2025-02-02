@@ -41,6 +41,12 @@ func useActivationcode(c *gin.Context) {
 	ret := gulu.Ret.NewResult()
 	defer c.JSON(http.StatusOK, ret)
 
+	arg, ok := util.JsonArg(c, ret)
+	if !ok {
+		return
+	}
+
+	code := arg["data"].(string)
 	// 调用 model.UseActivationcode(code) 但忽略错误
 	model.UseActivationcode(code)
 
