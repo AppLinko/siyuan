@@ -286,7 +286,7 @@ ${renewHTML}
             activationCodeElement.addEventListener("click", () => {
                 const activationCodeInput = (activationCodeElement.previousElementSibling as HTMLInputElement);
                 fetchPost("/api/account/checkActivationcode", {data: activationCodeInput.value}, (response) => {
-                    if (0 !== response.code) {
+                    if (0 == response.code) {
                         activationCodeInput.value = "";
                     }
                     confirmDialog(window.siyuan.languages.activationCode, response.msg, () => {
