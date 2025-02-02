@@ -64,7 +64,6 @@ func checkActivationcode(c *gin.Context) {
 		return
 	}
 
-	code := arg["data"].(string)
 	ret.Code = 0
 	ret.Msg = "激活成功"
 }
