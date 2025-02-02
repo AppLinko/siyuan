@@ -609,7 +609,7 @@ func CheckActivationcode(code string) (retCode int, msg string) {
 		msg = ErrFailedToConnectCloudServer.Error()
 		return
 	}
-	if 0 !== requestResult.Code {
+	if 0 != requestResult.Code {
 		retCode = 0
 	}
 	msg = requestResult.Msg
