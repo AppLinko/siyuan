@@ -59,11 +59,6 @@ func checkActivationcode(c *gin.Context) {
 	ret := gulu.Ret.NewResult()
 	defer c.JSON(http.StatusOK, ret)
 
-	arg, ok := util.JsonArg(c, ret)
-	if !ok {
-		return
-	}
-
 	ret.Code = 0
 	ret.Msg = "激活成功"
 }
