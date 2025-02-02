@@ -35,12 +35,12 @@
 			"Children": [
 				{
 					"Type": "NodeText",
-					"Data": "思源笔记提供了 Android 端、iOS 端和鸿蒙端 App，已经上架部分手机应用商店，请在应用商店中搜索 "
+					"Data": "沈同学的笔记提供了 Android 端、iOS 端和鸿蒙端 App，已经上架部分手机应用商店，请在应用商店中搜索 "
 				},
 				{
 					"Type": "NodeTextMark",
 					"TextMarkType": "code",
-					"TextMarkTextContent": "思源笔记"
+					"TextMarkTextContent": "沈同学的笔记"
 				},
 				{
 					"Type": "NodeText",
